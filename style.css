@@ -10,6 +10,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     min-height: 100vh;
     background: #222;
 }
@@ -18,7 +19,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     top: 17vh;
     left: 6em;
     font-size:8.5vh;
@@ -28,7 +29,6 @@ body
 {
     color: #89ec5d;
 }
-
 .card
 {
     position: relative;
@@ -36,6 +36,7 @@ body
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: 90%;
     padding: 60px, 0;
     gap: 60px;
 }
