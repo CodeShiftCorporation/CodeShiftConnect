@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #222;
+}
+
+.resume
+{
+    width: 80%;
+    padding: 20px;
+}
+
+.resume h2
+{
+    width: 100%;
+    color: #70ed5d;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.resume .content
+{
+    position:relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+
+.resume .content .col
+{
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+}
+
+.resume .content .col .inputBox
+{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #70ed5d;
+}
+
+.resume .content .inputBox input,
+.resume .content .col .inputBox.textarea textarea
+
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #000;
+}
+
+.resume .content .inputBox .text
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.resume .content .inputBox input:focus + .text,
+.resume .content .inputBox input:valid + .text
+
+{
+    top: -35px;
+    left: -10px;
+}
+
+.resume .content .inputBox .line
+{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #70ed5d;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.resume .content .inputBox input:focus ~ .line,
+.resume .content .inputBox input:valid ~ .line
+{
+    height: 100%;
+}
+
+.resume .content .inputBox.textarea
+{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+
+.resume .content .inputBox.textarea textarea
+{
+    height: 100%;
+    resize: none;
+} 
+
+.resume .content .inputBox textarea:focus + .text,
+.resume .content .inputBox textarea:valid + .text
+
+{
+    top: -35px;
+    left: -10px;
+}
+
+.resume .content .inputBox textarea:focus ~ .line,
+.resume .content .inputBox textarea:valid ~ .line
+{
+    height: 100%;
+}
+
+input[type="submit"]
+{
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: #70ed5d;
+    color: #000;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.resume .content .colbuttons-container .back-link
+{
+    border: none;
+    text-decoration: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: #70ed5d;
+    color: #000;
+    font-size: 18px;
+    border-radius: 5px;
+}
