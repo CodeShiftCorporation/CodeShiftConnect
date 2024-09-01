@@ -10,18 +10,18 @@
     <body>
         <div class="resume">
             <h2>Resume for a programmer</h2>
-            <form action="https://formspree.io/f/xdorgjdp"method="POST">
+            <form action="https://formspree.io/f/mqazjzgb" method="POST">
             <div class="content">
                 <div class="col">
                     <div class="inputBox">
-                        <input type="text" name="first_name" required="required">
+                        <input type="text" name="first_name" required="required" minlength="2" maxlength="30" pattern="[A-Za-z\s\-]+">
                         <span class="text">First Name</span>
                         <span class="line"></span>
                     </div>
                 </div>
                 <div class="col">
                     <div class="inputBox">
-                        <input type="text" name="last_name" required="required">
+                        <input type="text" name="last_name" required="required" minlength="2" maxlength="30" pattern="[A-Za-z\s\-]+">
                         <span class="text">Last Name</span>
                         <span class="line"></span>
                     </div>
@@ -30,14 +30,14 @@
             <div class="content">
                 <div class="col">
                     <div class="inputBox">
-                        <input type="text" name="email" required="required">
+                        <input type="text" name="email" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                         <span class="text">Emaill</span>
                         <span class="line"></span>
                     </div>
                 </div>
                 <div class="col">
                     <div class="inputBox">
-                        <input type="text" name="mobile" required="required" >
+                        <input type="text" name="mobile" required="required" pattern="\+?[0-9\s\-]{7,15}">
                         <span class="text">Mobile</span>
                         <span class="line"></span>
                     </div>
